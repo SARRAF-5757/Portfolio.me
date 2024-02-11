@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+/*------------general------------*/
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ body {
     height: 100vh;
     background-image: url(images/background.png);
     background-size: cover;
-    background-position: center;;
+    background-position: center;
 }
 .container {
     padding: 10px 10%;
@@ -53,9 +54,33 @@ nav ul li a:hover::after {
 }
 .header-text {
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: right;
 }
 .header-text h1{
     font-size: 50px;
     margin-top: 20px;
+    text-align: right;
+}
+.header-text h1 span{
+    color: #61D2FA;
+}
+.header-text p span1 {
+    color: #0064c2;
+}
+.header-text p span2 {
+    color: #FFCB05;
+}
+
+.header-text h1 span:hover{
+    color: #24ff57;
+    transition: 0.5s;
+}
+
+/*------------about me------------*/
+#about {
+    padding: 80px 0;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;;
 }
