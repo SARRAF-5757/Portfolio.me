@@ -34,10 +34,59 @@
                     <img src="images/me.1.png" alt="Photo of me" width="500px">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 class="tittle" >About Me</h1>
+                    <p class="paragraph">blah blah blah blah blah blah blah blah blah 
+                        blah blah blah blah blah blah blah blah blah blah blah blah 
+                        blah blah blah blah blah blah blah blah blah</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>C++</span><br>blah blah blah</li>
+                        <li><span>Python</span><br>blah blah blah</li>
+                        <li><span>Java</span><br>blah blah blah</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Arduino</span><br>blah blah blah</li>
+                        <li><span>Rocket</span><br>blah blah blah</li>
+                        <li><span>HGMP</span><br>blah blah blah</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>University of Michigan</span><br>blah blah blah</li>
+                        <li><span>Hamtramck High School</span><br>blah blah blah</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> 
+
+
+    <!------------------------My Works-------------------------------->
+
 </body>
 </html>
